@@ -1,16 +1,17 @@
 # login_page_refactoring
+로그인 페이지, 리펙토링 방법, 커스텀 위젯을 사용한 리펙토링
 
-A new Flutter project.
+## 실제 화면
+![image](https://user-images.githubusercontent.com/77111523/147878228-5f1cc6a7-d012-4c26-8e17-996360f0ae50.png)
 
-## Getting Started
+## 설명
+재사용하고 싶은 버튼의 기본 속성
+1. 로고 이미지
+2. 텍스트
+3. 버튼 색상
+4. 버튼 모서리 둥글기
+5. `onPressed()` 함수
 
-This project is a starting point for a Flutter application.
+build() 메서드 내에서 우리가 만든 변수로 지정된 속성들은 이제 로그인 페이지에서 전달된 값으로 대체되어야 하므로 더 이상 특정 값을 가질 필요가 없음. 모두 우리가 만든 변수로 바꿔줘야 함.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 만들어야할 버튼의 개수가 많아질수록 효율성은 더 증가할 것임!
